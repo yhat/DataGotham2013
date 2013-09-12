@@ -1,0 +1,72 @@
+Outline
+    1) Intro to Scientific Python
+        - Why Python? What are the other options?
+        - Core Libraries: 
+            + numpy for mathmatical operations and arrays
+            + scipy for stats and "raw" math
+            + pandas for managing data
+            + scikit-learn for modeling and describing data
+        - What is deployment?
+            + Quick overview of Yhat
+    2) Case Study: Building a Beer Recommender
+        (all of the following will be done in the beer recommender)
+        - Setting up your environment
+            + IPython Notebook (ipython notebook --pylab inline)
+            + Other recommended IDEs
+        - Getting data into Python 
+            + reading from a file
+            + reading from a database
+        - Munging data with pandas
+            + What is a DataFrame? Series?
+            + Basic commands - navigating around your data
+                - head, tail, describe, unique, value_counts
+                - selecting columns/series
+            + Null handling
+                + fillna
+                + fill forward, fill backward, etc.
+            + Merging and Joining DataFrames
+                + merge, concat, append, join
+                + pandasql
+            + Indexing
+                - selecting subsets of data
+                - boolean indexing
+            + Working with dates (?)
+                - parse_datetime
+            + groupby
+                - Split > Apply > Combine
+        - Modeling with scikit-learn
+            + What can it do?
+                - Supervised Learning
+                    + classification
+                    + regression
+                - Unsupervised Learning
+                    + clustering
+                    + PCA
+                    + markov models
+                - Model Selection / Data Processing
+                    + cross validation
+                    + feature extraction
+            + The Documentation
+                - Tutorials / Examples
+                - API (how to import things)
+            + Fitting a model
+                - An example with KNN
+                - Swap out with a new model
+            + Model Evaluation
+                - How do I know that my model works?
+                - cross validation / classification metrics
+            + Horse racing models
+                - Putting fitting and evaluating models together
+                - Grid Search
+        - Deploying with Yhat
+            + You've built your model...now what?
+            + Basics of Yhat
+                - require = define dependencies
+                - transform = define your data transformations (pandas)
+                - predict = define your prediction (scikit-learn)
+            + Live deployment!
+            + Document your model
+                - yhat.document() to generate an app
+        - Building your own app
+            + Visit your model
+            + Play with your app!
